@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Esamanru';
+    src: url('./fonts/esamanru Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Esamanru';
+    src: url('./fonts/esamanru Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Esamanru', sans-serif;
+    color: #000;
+    font-weight: 500;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+header {
+    height: 9%;
+    padding: 10px 15px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+}
+header h1 { font-size: clamp(20px, 5vw, 30px); }
+main {
+    height: 91%;
+    display: flex;
+    flex-direction: column;
+}
+.impact-section h2, .danger-section h2 {
+    font-size: clamp(17px, 4.5vw, 23px);
+    padding: 10px 12px;
+    border-bottom: 2px solid #000;
+}
+.weight-box {
+    padding: 10px 12px;
+    font-size: 15px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.weight-box input {
+    width: 85px;
+    padding: 4px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    outline: none;
+    text-align: center;
+}
+.weight-box span { font-size: 13px; }
+.gate-box { border-bottom: 2px solid #000; }
+.gate-toggle {
+    padding: 10px 12px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.gate-content {
+    display: none;
+    border-top: 1px solid #000;
+    padding-left: 16px;
+}
+.gate-content.open { display: block; }
+.gate-content p {
+    border-left: 2px solid #000;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+#notice {
+    font-size: 11px;
+    padding: 4px 12px;
+    color: #d32f2f;
+}
+.danger-section {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+.danger-section h2 { border-top: 2px solid #000; }
+.danger-item {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+}
+.image-box {
+    width: 55%;
+    height: 90%;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description {
+    flex: 1;
+    font-size: 13px;
+    line-height: 1.5;
+}
